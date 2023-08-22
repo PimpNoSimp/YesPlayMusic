@@ -103,13 +103,12 @@ jobs:
           if-no-files-found: ignore
 
       - uses: actions/upload-artifact@v3
-        with:
           name: YesPlayMusic-win
           path: dist_electron/*Setup*.exe
           if-no-files-found: ignore
-
-      - uses: actions/upload-artifact@v3
-        with:
+          issue: no file detected
           name: YesPlayMusic-linux
           path: dist_electron/*.AppImage
           if-no-files-found: ignore
+          branches: no_data_found
+          pull_request: no secerity system found in files 303,304,312
